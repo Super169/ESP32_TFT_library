@@ -1251,8 +1251,8 @@ void app_main()
 
     // ===================================================
     // ==== Set display type                         =====
-    tft_disp_type = DEFAULT_DISP_TYPE;
-	//tft_disp_type = DISP_TYPE_ILI9341;
+    //tft_disp_type = DEFAULT_DISP_TYPE;
+	tft_disp_type = DISP_TYPE_ILI9341;
 	//tft_disp_type = DISP_TYPE_ILI9488;
 	//tft_disp_type = DISP_TYPE_ST7735B;
     // ===================================================
@@ -1328,8 +1328,8 @@ void app_main()
 	printf("\r\n==============================\r\n");
     printf("TFT display DEMO, LoBo 11/2017\r\n");
 	printf("==============================\r\n");
-    printf("Pins used: miso=%d, mosi=%d, sck=%d, cs=%d\r\n", PIN_NUM_MISO, PIN_NUM_MOSI, PIN_NUM_CLK, PIN_NUM_CS);
-#if USE_TOUCH > TOUCH_TYPE_NONE
+	printf("Pins used: miso=%d, mosi=%d, sck=%d, cs=%d, dc=%d, rst=%d\r\n", PIN_NUM_MISO, PIN_NUM_MOSI, PIN_NUM_CLK, PIN_NUM_CS, PIN_NUM_DC, PIN_NUM_RST);
+	#if USE_TOUCH > TOUCH_TYPE_NONE
     printf(" Touch CS: %d\r\n", PIN_NUM_TCS);
 #endif
 	printf("==============================\r\n\r\n");

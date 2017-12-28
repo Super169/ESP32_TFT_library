@@ -125,13 +125,13 @@
 #define PIN_NUM_MOSI 23		// SPI MOSI
 #define PIN_NUM_CLK  18		// SPI CLOCK pin
 #define PIN_NUM_CS   5		// Display CS pin
-#define PIN_NUM_DC   26		// Display command/data pin
+#define PIN_NUM_DC   16		// Display command/data pin
 #define PIN_NUM_TCS  25		// Touch screen CS pin (NOT used if USE_TOUCH=0)
 
 // --------------------------------------------------------------
 // ** Set Reset and Backlight pins to 0 if not used !
 // ** If you want to use them, set them to some valid GPIO number
-#define PIN_NUM_RST  0  	// GPIO used for RESET control
+#define PIN_NUM_RST  17  	// GPIO used for RESET control
 
 #define PIN_NUM_BCKL 0  	// GPIO used for backlight control
 #define PIN_BCKL_ON  0  	// GPIO value for backlight ON
